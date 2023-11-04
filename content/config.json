@@ -26,10 +26,22 @@
     "photo": "/nick.png",
     "bio": "Nick Paterson\nWeb Developer | Lifelong Learner\n🌐 Passionate about web development and creating digital solutions that make a difference.\n👨‍💻 Currently a UWS student majoring in Bsc(hons) Web and Mobile Development.\n🚀 Keen on exploring the latest technologies and trends in the tech world.\n📚 Lifelong learner with a thirst for knowledge in all things tech-related.\n📊 Committed to turning ideas into functional and user-friendly websites and applications.\n🎯 Always seeking opportunities to grow, collaborate, and contribute to the tech community.\nLet's connect and explore the digital world together! 🌟    ",
     "contacts": {
-      "email": "hello@nickpaterson.dev",
-      "github": "https://github.com/NickPaterson",
-      "linkedin": "https://www.linkedin.com/in/nick-paterson/",
-      "codepen": "https://codepen.io/NPGB88"
+        "rss": "",
+        "email": "hello@nickpaterson.dev",
+        "github": "https://github.com/NickPaterson",
+        "facebook": "#",
+        "telegram": "#",
+        "twitter": "#",
+        "linkedin": "https://www.linkedin.com/in/nick-paterson/",
+        "instagram": "#",
+        "mastodon": "#",
+        "line": "",
+        "weibo": "",
+        "gitlab": "",
+        "medium": "",
+        "youtube": "",
+        "codepen": "https://codepen.io/NPGB88",
+        "soundcloud": ""
     }
   }
 }
