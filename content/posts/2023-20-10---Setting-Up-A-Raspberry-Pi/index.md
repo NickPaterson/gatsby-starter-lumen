@@ -1,6 +1,6 @@
 ---
 title: "Setting up a Rasberry Pi"
-date: "2023-10-20T12:46:37.121Z"
+date: "2023-10-20T07:00:00Z"
 template: "post"
 draft: false
 slug: "/posts/setting-up-a-rasberry-pi"
