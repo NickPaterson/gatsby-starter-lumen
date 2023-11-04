@@ -1,13 +1,20 @@
 ---
 title: "About me"
 template: "page"
-socialImage: "./notebook.jpg"
+socialImage: "./nick-transparent-bg.png"
 ---
+Web Developer | Lifelong Learner
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+🌐 Passionate about web development and creating digital solutions that make a difference.
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/notebook.jpg)
+👨‍💻 Currently a UWS student majoring in Bsc(hons) Web and Mobile Development.
 
-_Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi._
+🚀 Keen on exploring the latest technologies and trends in the tech world.
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+📚 Lifelong learner with a thirst for knowledge in all things tech-related.
+
+📊 Committed to turning ideas into functional and user-friendly websites and applications.
+
+🎯 Always seeking opportunities to grow, collaborate, and contribute to the tech community.
+
+Let's connect and explore the digital world together! 🌟
