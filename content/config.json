@@ -22,22 +22,22 @@
     "photo": "/nick.png",
     "bio": "Nick Paterson\nWeb Developer | Lifelong Learner\n🌐 Passionate about web development and creating digital solutions that make a difference.\n👨",
     "contacts": {
-        // "rss": "",
+        "rss": "",
         "email": "hello@nickpaterson.dev",
         "github": "https://github.com/NickPaterson",
-        // "facebook": "#",
-        // "telegram": "#",
-        // "twitter": "#",
+        "facebook": "",
+        "telegram": "",
+        "twitter": "",
         "linkedin": "https://www.linkedin.com/in/nick-paterson/",
-        // "instagram": "#",
-        // "mastodon": "#",
-        // "line": "",
-        // "weibo": "",
-        // "gitlab": "",
-        // "medium": "",
-        // "youtube": "",
+        "instagram": "",
+        "mastodon": "",
+        "line": "",
+        "weibo": "",
+        "gitlab": "",
+        "medium": "",
+        "youtube": "",
         "codepen": "https://codepen.io/NPGB88",
-        // "soundcloud": ""
+        "soundcloud": ""
     }
   }
 }
