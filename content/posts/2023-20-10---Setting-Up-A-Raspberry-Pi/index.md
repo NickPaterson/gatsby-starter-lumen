@@ -9,7 +9,7 @@ tags:
   - "Set Up"
   - "Config"
 description: "Repurposing my Raspberry Pi, a device I hadn't touched since I initially installed an operating system on it back in April 2020. My goal was to turn it into a web server. I naively assumed that I could plug it into my home router, and it would seamlessly become part of my home network. To my disappointment, that wasn't the case, and I found myself spending an excessive amount of time trying to locate the Pi within my network."
-socialImage: "./media/notebook.jpg"
+socialImage: "./media/raspberrypi.jpg"
 ---
 
 Repurposing my Raspberry Pi, a device I hadn't touched since I initially installed an operating system on it back in April 2020. My goal was to turn it into a web server. I naively assumed that I could plug it into my home router, and it would seamlessly become part of my home network. To my disappointment, that wasn't the case, and I found myself spending an excessive amount of time trying to locate the Pi within my network.
