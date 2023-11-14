@@ -13,7 +13,8 @@ description: "Once my raspberry pi was up and running, see my post: ![Setting up
 socialImage: ""
 ---
 
-Once my raspberry pi was up and running, see my post: ![Setting up a Rasberry Pi](../2023-20-10---Setting-Up-A-Raspberry-Pi/index.md), with PHP and MySql already installed it was time to get started with Laravel.
+
+Once my Raspberry Pi was up and running, see my post on [Setting up a Raspberry Pi](https://blog.nickpaterson.dev/posts/setting-up-a-raspberry-pi) with PHP and MySQL already installed, it was time to get started with Laravel.
 
 Laravel is a popular PHP web application framework, created by ![Taylor Otwell](https://twitter.com/taylorotwell). Laravel is known for its elegant and exprssive syntax, which simplifies common web development tasks, making it easier and more efficient to build web applications.
 
@@ -25,10 +26,6 @@ At this point I was encounted an error: mkdir(): Permissions denied
 
 ![mkdir(): Permission denied](./media/mkdir-permissions.png)
 
-<figure class="float-right" style="width: 240px">
-	<img src="/media/mkdir-permissions.png" alt="mkdir-permissions-denied">
-	<figcaption>mkdir permissions</figcaption>
-</figure>
 Using linux ll command to list the names of the files, with permissons and groups information.  I saw that the www folder was owned by the root user, which was denying access for laravel to create a new directory in the www directory.
 
 ![Directory Information](./media/root-dir.png)
