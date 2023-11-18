@@ -4,7 +4,7 @@ date: "2023-10-20T07:00:00Z"
 template: "post"
 draft: false
 slug: "/posts/setting-up-a-rasberry-pi"
-category: "Set up"
+category: "Hosting"
 tags:
   - "Set Up"
   - "Config"

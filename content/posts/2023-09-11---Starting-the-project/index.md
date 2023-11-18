@@ -4,7 +4,7 @@ date: "2023-11-09T13:00:00.284Z"
 template: "post"
 draft: false
 slug: "/posts/installing-laravel-and-tailwind"
-category: "Set Up"
+category: "Install"
 tags:
   - "Set Up"
   - "Laravel"

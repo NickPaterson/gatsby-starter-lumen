@@ -4,7 +4,7 @@ date: "2023-11-02T22:12:03.284Z"
 template: "post"
 draft: false
 slug: "/posts/setting-up-laravel"
-category: "Set Up"
+category: "Install"
 tags:
   - "Open source"
   - "Laravel"

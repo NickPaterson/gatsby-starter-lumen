@@ -16,12 +16,14 @@ Laravel Breeze is a framework for authentication, this framework automatically c
 Before installing Laravel Breeze, I committed my code to my GitHub repository, to backup my work as install Laravel Breeze rewrites a lot of your base files.
 
 First you need to install breeze:
+
 `composer require laravel/breeze –dev`
-` php artisan breeze:install`
+
+`php artisan breeze:install`
+
 And that’s it! 😊
 
-
-I had installed ![Flowbite](https://flowbite.com/) which helps to create websites faster by using premade components on top of Tailwind CSS.
+I had installed [Flowbite](https://flowbite.com/) which helps to create websites faster by using premade components on top of Tailwind CSS.
 
 I didn’t anticipate, how much work it was going to be fixing all the bugs within these components, that installing Breeze had introduced.
 
