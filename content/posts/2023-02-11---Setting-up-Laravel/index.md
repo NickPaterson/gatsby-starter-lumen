@@ -36,7 +36,7 @@ At this point I was encounted an error: mkdir(): Permissions denied
 
 ![mkdir(): Permission denied](./media/mkdir-permissions.png)
 
-Using linux `ll` command to list the names of the files, with permissons and groups information.  I saw that the www folder was owned by the root user, which was denying access for laravel to create a new directory in the www directory.
+Using linux `ll` command to list the names of the files, with permissions  and groups information.  I saw that the www folder was owned by the root user, which was denying Laravel access to create a new directory in the www directory.
 
 ![Directory Information](./media/root-dir.png)
 
@@ -44,6 +44,6 @@ I created a www-data group and changed the owner using linux `chown` command.
 
 ![Directory Information](./media/chown-permissions.png)
 
-Typing in the laravel new project again! This time it worked! I have successfully created a Laravel project, hosted on my Raspberry Pi.
+Typing in the `laravel new project` again! This time it worked! I have successfully created a Laravel project, hosted on my Raspberry Pi.
 
 ![Application Ready](./media/application-ready.png)
