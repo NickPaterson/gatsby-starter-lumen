@@ -2,7 +2,7 @@
 title: "Creating a Motorbike Listings Page"
 date: "2023-11-12T09:30:00Z"
 template: "post"
-draft: true
+draft: false
 slug: "/posts/creating-motorbike-listings"
 category: "Listings"
 tags:
