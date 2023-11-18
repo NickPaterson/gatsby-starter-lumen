@@ -14,23 +14,34 @@ socialImage: ""
 ---
 
 
-Once my Raspberry Pi was up and running, see my post on [Setting up a Raspberry Pi](https://blog.nickpaterson.dev/posts/setting-up-a-raspberry-pi) with PHP and MySQL already installed, it was time to get started with Laravel.
+Once my Raspberry Pi was up and running, with PHP and MySQL already installed, it was time to get started with Laravel.
 
-Laravel is a popular PHP web application framework, created by ![Taylor Otwell](https://twitter.com/taylorotwell). Laravel is known for its elegant and exprssive syntax, which simplifies common web development tasks, making it easier and more efficient to build web applications.
+Laravel is a popular PHP web application framework, created by [Taylor Otwell](https://twitter.com/taylorotwell). Laravel is known for its elegant and expressive syntax, which simplifies common web development tasks, making it easier and more efficient to build web applications.
 
-To get started, I needed Composer, a PHP package manager.  Composer is a crucial tool for laravel development as it simplifies the process of managing the projects dependencies.
+To get started, I needed Composer, a PHP package manager.  Composer is a crucial tool for Laravel development as it simplifies the process of managing the projects dependencies.
 
-With Composer installed, the next step was to install the Laravel installer globally, a command line tool that simplifies the process of creating new Laravel projects, by using the command laravel new project-name.
+Installing Composer is as simple as one command in the project’s terminal.
+
+```php composer-setup.php --install-dir=bin --filename=composer```
+
+To access Composer globally, the following command moves the composer file to the /usr/local/bin directory.
+
+```mv composer.phar /usr/local/bin/composer```
+
+With Composer installed, the next step was to install the Laravel installer globally, a command line tool that simplifies the process of creating new Laravel projects, by using the following command:
+
+```laravel new project-name```
+
 
 At this point I was encounted an error: mkdir(): Permissions denied
 
 ![mkdir(): Permission denied](./media/mkdir-permissions.png)
 
-Using linux ll command to list the names of the files, with permissons and groups information.  I saw that the www folder was owned by the root user, which was denying access for laravel to create a new directory in the www directory.
+Using linux `ll` command to list the names of the files, with permissons and groups information.  I saw that the www folder was owned by the root user, which was denying access for laravel to create a new directory in the www directory.
 
 ![Directory Information](./media/root-dir.png)
 
-I created a www-data group and changed the owner using linux chown command.
+I created a www-data group and changed the owner using linux `chown` command.
 
 ![Directory Information](./media/chown-permissions.png)
 
