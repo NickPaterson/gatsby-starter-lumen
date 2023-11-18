@@ -9,12 +9,12 @@ tags:
   - "Open source"
   - "Laravel"
   - "Set Up"
-description: "Once my raspberry pi was up and running, see my post: ![Setting up a Rasberry Pi](../2023-20-10---Setting-Up-A-Raspberry-Pi/index.md), with PHP and MySql already installed it was time to get started with Laravel."
+description: "Once my raspberry pi was up and running, see my post: [Setting up a Rasberry Pi](https://blog.nickpaterson.dev/posts/setting-up-a-rasberry-pi), with PHP and MySql already installed it was time to get started with Laravel."
 socialImage: ""
 ---
 
 
-Once my Raspberry Pi was up and running, with PHP and MySQL already installed, it was time to get started with Laravel.
+Once my raspberry pi was up and running, see my post: [Setting up a Rasberry Pi](https://blog.nickpaterson.dev/posts/setting-up-a-rasberry-pi), with PHP and MySql already installed it was time to get started with Laravel.
 
 Laravel is a popular PHP web application framework, created by [Taylor Otwell](https://twitter.com/taylorotwell). Laravel is known for its elegant and expressive syntax, which simplifies common web development tasks, making it easier and more efficient to build web applications.
 
