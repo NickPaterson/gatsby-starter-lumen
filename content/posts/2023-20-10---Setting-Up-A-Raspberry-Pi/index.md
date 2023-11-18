@@ -12,6 +12,8 @@ description: "Repurposing my Raspberry Pi, a device I hadn't touched since I ini
 socialImage: "./media/raspberrypi.jpg"
 ---
 
+![Raspberry-Pi](./media/raspberrypi.jpg)
+
 Repurposing my Raspberry Pi, a device I hadn't touched since I initially installed an operating system on it back in April 2020. My goal was to turn it into a web server. I naively assumed that I could plug it into my home router, and it would seamlessly become part of my home network. To my disappointment, that wasn't the case, and I found myself spending an excessive amount of time trying to locate the Pi within my network.
 
 Eventually, I decided to power down the Pi and inspect its SD card. To my surprise, the operating system I had installed was still intact. However, here's where things got interesting. The 32GB SD card was recognized as only 2GB. The operating system had taken up the entire space. I decided to format the card because I had plans to switch the operating system to the Linux Ubuntu distribution. Unfortunately, after formatting, the card stubbornly remained recognized as a 2GB card.
