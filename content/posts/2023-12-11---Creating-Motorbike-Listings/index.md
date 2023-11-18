@@ -6,12 +6,13 @@ draft: false
 slug: "/posts/creating-motorbike-listings"
 category: "Listings"
 tags:
-  - "Set Up"
+  - "Laravel"
+  - "Eloquent"
   - "MySQL"
-  - "Models"
-description: ""
+description: "The creation of a motorbike listings page was both an exciting and educating journey."
 socialImage: ""
 ---
+The creation of a motorbike listings page was both an exciting and educating journey.
 
 As I was working locally, I had to install MySQL, after installing MySQL I initially had connection issues, as I must have installed MySQL previously and had forgotten my root password.  After a long Google search and frustration with technical blogs full of jargon that didn’t help, I finally came across a YouTube video that explained the process of resetting your root password and had a step-by-step process.  [Reset-your-MySQL-password]( https://www.youtube.com/watch?v=rr_hDJLFvQE).
 However, I was still having issues with logging into MySQL via my project’s terminal.
