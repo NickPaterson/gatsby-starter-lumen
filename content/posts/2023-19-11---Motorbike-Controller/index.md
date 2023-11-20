@@ -88,6 +88,7 @@ Route::post('/motorbike', [MotorbikeController::class, 'store'])->middleware(['a
 Route::patch('/motorbikes', [MotorbikeController::class, 'store'])->middleware(['auth', 'verified'])->name('motorbikes.store');
 
 I added a store method in the `MotorbikesController`:
+```
 // store a motorbike
     public function store(Request $request): View
     {
@@ -109,6 +110,7 @@ I added a store method in the `MotorbikesController`:
             'motorbike' => $motorbike
         ]);
     }
+  ```
 
 For now some of the values are hard coded … I plan to create the slug from the title and to solve the issue with it being unique, my plan is to use the user id in the url for example `/motorbikes/userid/slug` and for the images I will create a new table, model and controller for this …
 I tested the form upload with inputting test into most of the fields. It worked! 😊
