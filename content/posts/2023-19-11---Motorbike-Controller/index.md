@@ -79,6 +79,7 @@ require __DIR__.'/auth.php';
 
 ```
 With this I was getting a 404 error. After a lot of debugging, I eventually figured out that the order of the routes are important:
+```
 Route::get('/listings', [MotorbikeController::class, 'index']);
 Route::get('/motorbikes/create', [MotorbikeController::class, 'create']);
 
@@ -86,6 +87,8 @@ Route::get('/motorbikes/{motorbike}', [MotorbikeController::class, 'show']);
 
 Route::post('/motorbike', [MotorbikeController::class, 'store'])->middleware(['auth', 'verified'])->name('motorbike.store');
 Route::patch('/motorbikes', [MotorbikeController::class, 'store'])->middleware(['auth', 'verified'])->name('motorbikes.store');
+
+```
 
 I added a store method in the `MotorbikesController`:
 ```
@@ -115,4 +118,4 @@ I added a store method in the `MotorbikesController`:
 For now some of the values are hard coded … I plan to create the slug from the title and to solve the issue with it being unique, my plan is to use the user id in the url for example `/motorbikes/userid/slug` and for the images I will create a new table, model and controller for this …
 I tested the form upload with inputting test into most of the fields. It worked! 😊
 
-![Test-upload]('./media/testupload.png');
+![Test-upload]('./media/testupload.png')
