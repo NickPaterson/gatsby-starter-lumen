@@ -10,6 +10,7 @@ tags:
   - "Artisan"
   - "Controller"
 description: "Following the Laravel docs, I created a controller for the Motorbike listings"
+socialImage: ""
 ---
 Following the Laravel docs, [Laravel Contollers]( https://laravel.com/docs/10.x/controllers) I executed the following artisan command to automatically create a boilerplate controller for me
 `php artisan make:controller MotorbikeController`

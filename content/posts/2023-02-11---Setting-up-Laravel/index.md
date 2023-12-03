@@ -10,6 +10,7 @@ tags:
   - "Laravel"
   - "Set Up"
 description: "Once my raspberry pi was up and running, with PHP and MySql already installed it was time to get started with Laravel."
+socialImage: ""
 ---
 
 Once my raspberry pi was up and running, see my post: [Setting up a Rasberry Pi](https://blog.nickpaterson.dev/posts/setting-up-a-rasberry-pi), with PHP and MySql already installed it was time to get started with Laravel.

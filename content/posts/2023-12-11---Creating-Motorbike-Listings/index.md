@@ -10,6 +10,7 @@ tags:
   - "Eloquent"
   - "MySQL"
 description: "The creation of a motorbike listings page was both an exciting and educating journey."
+socialImage: ""
 ---
 The creation of a motorbike listings page was both an exciting and educating journey.
 
