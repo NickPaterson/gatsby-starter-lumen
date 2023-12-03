@@ -13,8 +13,20 @@
       "path": "/"
     },
     {
-      "label": "About me",
-      "path": "/pages/about"
+      "label": "Setup",
+      "path": "/category/install"
+    },
+    {
+      "label": "Controllers",
+      "path": "/category/controllers"
+    },
+    {
+      "label": "Models",
+      "path": "/category/models"
+    },
+    {
+      "label": "Models",
+      "path": "/category/issues"
     }
   ],
   "author": {
