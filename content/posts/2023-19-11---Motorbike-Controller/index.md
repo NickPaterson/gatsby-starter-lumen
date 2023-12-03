@@ -4,7 +4,7 @@ date: "2023-11-19T20:03:00Z"
 template: "post"
 draft: false
 slug: "/posts/creating-motorbike-controller"
-category: "Dev"
+category: "Controllers"
 tags:
   - "Laravel"
   - "Artisan"

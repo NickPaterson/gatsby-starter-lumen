@@ -4,7 +4,7 @@ date: "2023-11-12T09:30:00Z"
 template: "post"
 draft: false
 slug: "/posts/creating-motorbike-listings"
-category: "Dev"
+category: "Models"
 tags:
   - "Laravel"
   - "Eloquent"
