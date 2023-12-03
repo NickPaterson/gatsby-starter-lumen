@@ -1,5 +1,5 @@
 ---
-title: "About me"
+title: "test"
 template: "page"
 socialImage: "./nick-transparent-bg.png"
 ---
