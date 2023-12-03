@@ -9,6 +9,10 @@
   "pathPrefix": "/",
   "menu": [
     {
+      "label": "Motorbike Classifieds",
+      "path": "https://cyli.co.uk"
+    },
+    {
       "label": "Articles",
       "path": "/"
     },
