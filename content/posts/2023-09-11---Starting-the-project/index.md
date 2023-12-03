@@ -10,7 +10,7 @@ tags:
   - "Laravel"
   - "Tailwind"
 description: "I created a new Laravel project locally on my machine and created a GitHub repo to back up my work. With the idea of deploying the application once it has been completed."
-socialImage: ""
+socialImage: " "
 ---
 
 As I was having performance issues with my Raspberry Pi, I created a new Laravel project locally on my machine and created a GitHub repo to back up my work. With the idea of deploying the application once it has been completed.

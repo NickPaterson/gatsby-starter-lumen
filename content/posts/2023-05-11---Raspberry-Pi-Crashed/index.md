@@ -9,7 +9,7 @@ tags:
   - "Issues"
   - "RaspberryPi"
 description: "Monitoring the CPU and memory usage quickly revealed that I was pushing my hardware to the limit."
-socialImage: ""
+socialImage: " "
 ---
 
 I also installed another project for my Internet Technologies module.  The application was based on the MERN Stack (MongoDB, Express.js, React, Node.js)
