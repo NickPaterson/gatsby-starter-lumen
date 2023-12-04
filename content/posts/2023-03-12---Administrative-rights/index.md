@@ -90,15 +90,18 @@ I wanted to add a link onto the sidebar for the, the Laravel Breeze had access t
 
 After some Googling, I needed to add in a Service Provider, using [Laravel Service Providers Docs]( https://laravel.com/docs/10.x/providers)
 I created an AdminServiceProvider using Artisan ` php artisan make:provider AdminServiceProvider`
+```
 public function boot()
     {
         Blade::if('admin', function () {
             return auth()->check() && auth()->user()->is_admin;
         });
     }
+```
 
-I also added this service provider in the list of `ServiceProviders` in the `config.php` file:
-```'providers' => ServiceProvider::defaultProviders()->merge([
+I also added this service provider in the list of `ServiceProviders` in the `config/app.php` file:
+```
+'providers' => ServiceProvider::defaultProviders()->merge([
 App\Providers\AdminServiceProvider::class,
     ])->toArray(),
 ```
