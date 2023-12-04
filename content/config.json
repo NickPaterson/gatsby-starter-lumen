@@ -5,15 +5,15 @@
   "copyright": "© All rights reserved.",
   "googleAnalyticsId": "",
   "disqusShortname": "",
-  "postsLimit": 25,
+  "postsLimit": 5,
   "pathPrefix": "/",
   "menu": [
     {
-      "label": "Motorbike Classifieds",
+      "label": "Motorbike Classifieds Website",
       "path": "https://cyli.co.uk"
     },
     {
-      "label": "Articles",
+      "label": "All Articles",
       "path": "/"
     },
     {
@@ -25,17 +25,16 @@
       "path": "/category/routes"
     },
     {
-      "label": "Views",
-      "path": "/category/views"
-    },
-    {
-
       "label": "Models",
       "path": "/category/models"
     },
     {
       "label": "Controllers",
       "path": "/category/controllers"
+    },
+    {
+      "label": "Policy",
+      "path": "/category/policy"
     },
     {
       "label": "Issues",
