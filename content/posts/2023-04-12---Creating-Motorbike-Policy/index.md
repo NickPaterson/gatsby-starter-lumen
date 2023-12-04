@@ -9,9 +9,10 @@ tags:
   - "Laravel"
   - "Artisan"
   - "Policy"
-description: ""
-socialImage: "./media/testupload.png"
+description: "Policies are classes are used to handle authorisation checks related to Eloquent models.  I will be making a policy for Create, Read, Update and Delete (CRUD) operations on the motorbikes table."
+socialImage: "./media/create-200.png"
 ---
+
 Creating a CRUD operations policy
 From reading the [Laravel Policies]( https://laravel.com/docs/10.x/authorization#creating-policies) and the from the lab slides.
 Policies are classes are used to handle authorisation checks related to Eloquent models.  I will be making a policy for Create, Read, Update and Delete (CRUD) operations on the motorbikes table,
