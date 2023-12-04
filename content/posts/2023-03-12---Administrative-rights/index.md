@@ -1,6 +1,6 @@
 ---
 title: "Creating Adminstrative Rights"
-date: "2023-11-27T11:34:00Z"
+date: "2023-12-03T13:37:00Z"
 template: "post"
 draft: false
 slug: "/posts/admin-rights"
