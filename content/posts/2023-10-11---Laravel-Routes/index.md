@@ -8,7 +8,7 @@ category: "Routes"
 tags:
   - "Laravel"
   - "Routes"
-description: ""
+description: "In Laravel, routes serve as a crucial component for defining the entry points of your web application. They determine how HTTP requests should be handled and which controllers or closures should respond to them"
 socialImage: "./media/listings.png"
 ---
 
