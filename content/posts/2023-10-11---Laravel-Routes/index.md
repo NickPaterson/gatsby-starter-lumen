@@ -1,6 +1,6 @@
 ---
 title: "Laravel Routes"
-date: "2023-10-12T09:30:00Z"
+date: "2023-11-12T09:30:00Z"
 template: "post"
 draft: false
 slug: "/posts/laravel-routes"
