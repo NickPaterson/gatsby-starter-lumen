@@ -21,12 +21,21 @@
       "path": "/category/install"
     },
     {
-      "label": "Controllers",
-      "path": "/category/controllers"
+      "label": "Routes",
+      "path": "/category/routes"
     },
     {
+      "label": "Views",
+      "path": "/category/views"
+    },
+    {
+
       "label": "Models",
       "path": "/category/models"
+    },
+    {
+      "label": "Controllers",
+      "path": "/category/controllers"
     },
     {
       "label": "Issues",
