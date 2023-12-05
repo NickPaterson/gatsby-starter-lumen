@@ -2,7 +2,7 @@
 title: "Project Introduction"
 date: "2023-12-05T21:48:00.284Z"
 template: "post"
-draft: true
+draft: false
 slug: "/posts/Project Introduction"
 category: "Install"
 tags:
