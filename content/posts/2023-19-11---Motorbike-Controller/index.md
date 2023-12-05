@@ -12,9 +12,13 @@ tags:
 description: "Following the Laravel docs, I created a controller for the Motorbike listings"
 socialImage: "./media/testupload.png"
 ---
-Following the Laravel docs, [Laravel Contollers]( https://laravel.com/docs/10.x/controllers) I executed the following artisan command to automatically create a boilerplate controller for me
+
+## Motorbike Controller
+
+Following the Laravel docs, [Laravel Contollers](https://laravel.com/docs/10.x/controllers) I executed the following artisan command to automatically create a boilerplate controller for me
 `php artisan make:controller MotorbikeController`
 This created a `MotorbikeController.php` file in the `Http/Controllers` directory.
+
 Withing this class I created the following methods, to return all motorbikes and a single motorbike:
 ```
 // show all motorbikes
@@ -33,11 +37,17 @@ Withing this class I created the following methods, to return all motorbikes and
         ]);
     }
 ```
+Code Block 1: MotorbikeController functions
+
+
 And updated the `web.php` routes file:
 ```
 Route::get('/listings', [MotorbikeController::class, 'index']);
 Route::get('/motorbikes/{motorbike}', [MotorbikeController::class, 'show']);
 ```
+Code Block 2: Routes updated to invoke the MotorbikeController functions
+
+
 At this point I wanted to create the functionality to upload a motorbike
 I created a blade file for the form, and updated the `MotorbikeController`
 ```
@@ -53,6 +63,9 @@ I created a blade file for the form, and updated the `MotorbikeController`
         ]);
     }
 ```
+Code Block 3: MotorbikeController create motorbike function
+
+
 I created a separate file for the motorbike routes:
 
 ```
@@ -79,6 +92,9 @@ Route::patch('/motorbikes', [MotorbikeController::class, 'store'])->middleware([
 require __DIR__.'/auth.php';
 
 ```
+Code Block 4: Custom Motorbike Route File
+
+
 With this I was getting a 404 error. After a lot of debugging, I eventually figured out that the order of the routes are important:
 ```
 Route::get('/listings', [MotorbikeController::class, 'index']);
@@ -90,6 +106,8 @@ Route::post('/motorbike', [MotorbikeController::class, 'store'])->middleware(['a
 Route::patch('/motorbikes', [MotorbikeController::class, 'store'])->middleware(['auth', 'verified'])->name('motorbikes.store');
 
 ```
+Code Block 5: Changed the order of the routes
+
 
 I added a store method in the `MotorbikesController`:
 ```
@@ -115,8 +133,19 @@ I added a store method in the `MotorbikesController`:
         ]);
     }
   ```
+Code Block 6: Motorbike store function
+
 
 For now some of the values are hard coded … I plan to create the slug from the title and to solve the issue with it being unique, my plan is to use the user id in the url for example `/motorbikes/userid/slug` and for the images I will create a new table, model and controller for this …
 I tested the form upload with inputting test into most of the fields. It worked! 😊
 
 ![Test-upload]('./media/testupload.png')
+Figure 1: Test upload
+
+## Conclusion
+
+Building the motorbike listing application with Laravel, I encountered various challenges and learned valuable lessons. Setting up the MySQL database and resolving connection issues provided insights into troubleshooting and configuring databases. Laravel's migration system simplified the creation and modification of database tables, and seeding provided a convenient way to populate tables with initial data.
+
+The implementation of Eloquent relationships enhanced the model associations, allowing the interactions between different tables.
+
+The creation of the motorbike listing page involved creating routes, controllers, and views, with each step contributing to the overall functionality.

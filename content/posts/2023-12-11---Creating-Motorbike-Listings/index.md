@@ -12,24 +12,34 @@ tags:
 description: "The creation of a motorbike listings page was both an exciting and educating journey."
 socialImage: "./media/listings.png"
 ---
+
+## Motorbike listing page
+
 The creation of a motorbike listings page was both an exciting and educating journey.
 
 As I was working locally, I had to install MySQL, after installing MySQL I initially had connection issues, as I must have installed MySQL previously and had forgotten my root password.  After a long Google search and frustration with technical blogs full of jargon that didn’t help, I finally came across a YouTube video that explained the process of resetting your root password and had a step-by-step process.  [Reset-your-MySQL-password]( https://www.youtube.com/watch?v=rr_hDJLFvQE).
 However, I was still having issues with logging into MySQL via my project’s terminal.
 
 ![MySQL-not-recognized](./media/mysql-not-recognized.png)
+Figure 1: MySql not reconised
+
 
 However, this was solved by updating the Path in Window’s environment variables
 
 ![Windows-environment-variables](./media/environment-variables.png)
+Figure 2:  Windows environment variables
+
 
 Fixed! :D
 ![MySQL-fixed](./media/mysql-logged-in.png)
+Figure 3: MySql fixed
+
 
 Laravel makes it easy to control and manage database schema, providing a convenient way to modify database tables. Using the following command:
 ```php artisan make:migration create_motorbikes_table```
 This created a file in the ```database/migrations``` directory.
 I added the following code in file it created: inside the `public function up()` function:
+
 ```
 Schema::create('motorbikes', function (Blueprint $table) {
             $table->id();
@@ -50,6 +60,9 @@ Schema::create('motorbikes', function (Blueprint $table) {
 
         });
 ```
+Code Block 1: Motorbike Model Schema
+
+
 Next, I created the Motorbike model using `php artisan make:model Motorbike`
 When the ```php artisan migrate``` is executed Laravel will create the `motorbikes` table in the configured database, and then using the `Motorbike` model allowing me to interact with this this table.
 I went through the same process to create a categories table: ` php artisan make:migration create_categories_table` and ` php artisan make:model Category`
@@ -60,11 +73,15 @@ Schema::create('categories', function (Blueprint $table) {
             $table->string('category');
         });
 ```
+Code Block 2: Categories Schema
+
 
 Executing the following command applies these changes to the database, executing the `up()` method:
 ```php artisan migrate```
 
 ![MySQL-tables](./media/mysql-tables.png)
+Figure 4: Database tables
+
 
 When making changes to these files you can use the `fresh` command `php artisan migrate:fresh`
 This executes the `down()` method for the last batch of migrations. Deleting the tables and then recreating them, also deleting all the data. For development I solved this problem by including some dummy data in the `DatabaseSeeder.php` file in the `/database/seeders` directory.
@@ -103,8 +120,10 @@ This executes the `down()` method for the last batch of migrations. Deleting the
             'category_id' => 1
         ]);
 ```
-So now I can execute the following command `php artisan migrate:fresh –seed`, which will drop all tables, recreate them and fill them with my data from the seeders file.
+Code Block 3: Database seeder
 
+
+So now I can execute the following command `php artisan migrate:fresh –seed`, which will drop all tables, recreate them and fill them with my data from the seeders file.
 
 I also created relationships, between the tables, using `Laravel’s Eloquent` relationships.
 Each instance of a `Motorbike` will belong to a single `User` and belong to a single `Category`.  So, in the `Motorbike.php` in the `/Models` directory, I added the following methods:
@@ -119,6 +138,8 @@ public function user()
         return $this->belongsTo(Category::class);
     }
 ```
+Code Block 4: Eloquent Relationships
+
 
 Finally, it was time to make the listing page.
 In the main routes file `/routes/web.php` I added the following code:
@@ -135,6 +156,8 @@ Route::get('/motorbikes/{motorbike}', function (Motorbike $motorbike) {
     ]);
 });
 ```
+Code Block 5: Listing Routes
+
 
 The first line imports the Motorbike model, so the code knows where to find the model.
 When a user inputs the /listings endpoint in the URL the code will fetch all the motorbikes and return them to the `listings.blade.php` file in the `/resources/views/pages` directory.
@@ -162,5 +185,17 @@ This file now has access to a variable called `motorbikes` that contains all the
     @endforeach
 </x-app-layout>
 ```
+Code Block 6: Blade motorbike listings
 
 ![Motorbike-listings](./media/listings.png)
+Figure 5: Motorbike listings page
+
+## Conclusion
+
+The creation of the motorbike listings page has been a technical challenge and a valuable learning experience.
+
+The initial hurdles with MySQL installation and password recovery provided an opportunity to learn how to reset the Root password.
+
+Using Laravel's migration commands made the process of schema creation easy, enabling efficient modification of database tables. The use of dummy data through seeders development, allowing for realistic testing scenarios.  Establishing relationships between tables using Laravel's Eloquent relationships enhanced the database structure, promoting better organisation and retrieval of data.
+
+The implementation of the motorbike listings page involved creating routes in Laravel, retrieving data from the Motorbike model and rendering it dynamically in the Blade views.

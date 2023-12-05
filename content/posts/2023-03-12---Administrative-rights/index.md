@@ -9,16 +9,15 @@ tags:
   - "Controllers"
   - "Models"
   - "Admin"
-description: "Setting up administrative rights"
+description: "From reading the Laravel Middleware documentation, the initial setup involved creating the middleware file, `php artisan make:middleware AdminMiddleware`,  which created the file in `Http/Middleware/AdminMiddleware.php`, and implementing logic to ensure a user had admin privileges."
 socialImage: "./media/raspberrypi.jpg"
 ---
 
-Setting up the administrative rights
-From reading the [Laravel Middleware docs]( https://laravel.com/docs/10.x/middleware)
-First I created a middleware file using Artisan
-`php artisan make:middleware AdminMiddleware`
-Which created the file in `Http/Middleware/AdminMiddleware.php`
-I added in code to the function created from the template provided, to check if the user is an admin
+## Setting up the administrative rights
+
+From reading the [Laravel Middleware docs]( https://laravel.com/docs/10.x/middleware), the initial setup involved creating the middleware file, `php artisan make:middleware AdminMiddleware`,  which created the file in `Http/Middleware/AdminMiddleware.php`, and implementing logic to ensure a user had admin privileges. Registering the file was a required step within the `App/Http/Kernel.php` file.
+
+I added in code to the function created from the template provided, to check if the user is an admin:
 ```
 <?php
 
@@ -45,9 +44,11 @@ class AdminMiddleware
     }
 }
 ```
-The middleware needed to be registered in the `app/Http/Kernel.php` file
+Code Block 1: Admin Middleware file
 
-![AdminController does not exsit](./media/noadmincontroller.png)
+
+![AdminController does not exist](./media/noadmincontroller.png)
+Figure 1: AdminController does not exist
 
 
 The error was due to me using:
@@ -56,9 +57,12 @@ App need to be a capital
 ` use App\Http\Controllers\AdminController;`
 I was now getting an error that it was expecting a different return type:
 
-![Return value must be of type](./media/return-type.png)
 
-I removed the `: view`
+![Return value must be of type](./media/return-type.png)
+Figure 2: Return value must be of type View
+
+
+I removed the `: view` from the function return type
 ```
 class AdminController extends Controller
 {
@@ -68,12 +72,16 @@ class AdminController extends Controller
     }
 }
 ```
+Code Block 2: index function, return type removed
+
 
 It was now working 😊
 
 ![Admin Page](./media/admin-page.png)
+Figure 3: Admin page in browser
 
-I wanted to add a link onto the sidebar for the, the Laravel Breeze had access to `@guest` and `@auth’.
+
+I wanted to add a link onto the sidebar for the, the Laravel Breeze had access to `@guest` and `@auth`.
 ```
           @admin
           <li>
@@ -87,8 +95,10 @@ I wanted to add a link onto the sidebar for the, the Laravel Breeze had access t
           </li>
           @endadmin
 ```
+Code Block 3: Custom blade @admin directive
 
-After some Googling, I needed to add in a Service Provider, using [Laravel Service Providers Docs]( https://laravel.com/docs/10.x/providers)
+
+After some Googling, I needed to add in a Service Provider, using [Laravel Service Providers Docs](https://laravel.com/docs/10.x/providers)
 I created an AdminServiceProvider using Artisan ` php artisan make:provider AdminServiceProvider`
 ```
 public function boot()
@@ -98,6 +108,8 @@ public function boot()
         });
     }
 ```
+Code Block 4: Custom blade @admin directive set up
+
 
 I also added this service provider in the list of `ServiceProviders` in the `config/app.php` file:
 ```
@@ -105,10 +117,20 @@ I also added this service provider in the list of `ServiceProviders` in the `con
 App\Providers\AdminServiceProvider::class,
     ])->toArray(),
 ```
+Code Block 5: AdminServiceProvider added to the list of Service Providers
+
 
 This was working, the dark mode browser is a user, and the light mode browser is an admin user, with the extra admin link on the sidebar.
 
 ![Browser Views](./media/user-admin-views.png)
+Figure 4: Two browsers, user view and admin view
+
+
+## Conclusion
+
+As soon as I started I was faced with errors, from silly case sensitive mistakes, and return types, despit these challenges the creation of the Admin Rights as evidenced by the screenshot. The desire to incorporate an admin link on the sidebar spurred exploration into Laravel Breeze's @guest and @auth directives.  Also writing this, I did further research and it turns out I could have used the default `AppServiceProvier.php` file, rather than creating my own.  However, I learn't how it is implemented.
+
+
 
 
 

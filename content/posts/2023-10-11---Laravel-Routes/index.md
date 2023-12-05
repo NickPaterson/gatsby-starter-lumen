@@ -12,6 +12,8 @@ description: "In Laravel, routes serve as a crucial component for defining the e
 socialImage: "./media/listings.png"
 ---
 
+## Laravel Routes
+
 In Laravel, routes serve as a crucial component for defining the entry points of your web application. They determine how HTTP requests should be handled and which controllers or closures should respond to them. Laravel's routing system is powerful, allowing developers to create clean and expressive URLs, organize code effectively, and implement various middleware for additional functionalities.
 
 Laravel provides you with a `web.php` routes file, I wanted to try and keep the code as clean as possible, so I created a custom `motorbike.php` routes file and at the bottom of the `web.php` I included `require __DIR__.'/motorbike.php';` code.
@@ -29,5 +31,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/motorbike/{motorbike}', [MotorbikeController::class, 'destroy'])->name('motorbike.destroy');
 });
 ```
+Code Block 1: Custom Motorbike Routes file
+
+
 The `/listings` and `/motorbike/{slug}` will be accessible by everyone visiting the website.
 However the routes handling the CRUD operations for the motorbike are inside the `Route::middleware`  to ensure the user is authenticated before performing any actions.
